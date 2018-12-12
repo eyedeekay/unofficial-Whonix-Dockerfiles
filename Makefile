@@ -2,7 +2,7 @@
 all: debian-stable debian-unstable ubuntu-stable ubuntu-unstable devuan-stable devuan-unstable
 
 debian-stable:
-	docker build -f Dockerfile.jessie eyedeekay/whonix:stable .
+	docker build -f Dockerfile.jessie -t eyedeekay/whonix:stable .
 
 debian-unstable:
 	docker build -f Dockerfile.sid -t eyedeekay/whonix:unstable .
